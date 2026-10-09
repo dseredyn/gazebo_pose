@@ -16,8 +16,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(gazebo_pose_interfaces REQUIRED)
 find_package(gz_transport_vendor REQUIRED)
-find_package(gz-transport13 REQUIRED)
-find_package(gz-msgs10 REQUIRED)
+find_package(gz-transport REQUIRED)
+find_package(gz-msgs REQUIRED)
 
 add_executable(gazebo_pose_service_node src/gazebo_pose_service_node.cpp)
 
@@ -29,8 +29,8 @@ ament_target_dependencies(gazebo_pose_service_node
 )
 
 target_link_libraries(gazebo_pose_service_node
-  gz-transport13::gz-transport13
-  gz-msgs10::gz-msgs10
+  gz-transport::gz-transport
+  gz-msgs::gz-msgs
 )
 
 install(TARGETS gazebo_pose_service_node
