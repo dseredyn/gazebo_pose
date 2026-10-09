@@ -15,7 +15,7 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(gazebo_pose_interfaces REQUIRED)
-
+find_package(gz_transport_vendor REQUIRED)
 find_package(gz-transport13 REQUIRED)
 find_package(gz-msgs10 REQUIRED)
 
