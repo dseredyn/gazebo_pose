@@ -116,6 +116,7 @@ private:
     res->message = "Found object";
     res->pose = it->second.pose;
     res->stamp = it->second.stamp;
+    res->frame_id = "world";
   }
 
   static bool endsWith(const std::string& value, const std::string& suffix)

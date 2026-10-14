@@ -4,3 +4,4 @@ bool success
 string message
 geometry_msgs/Pose pose
 builtin_interfaces/Time stamp
+string frame_id
