@@ -1,6 +1,7 @@
 string name
 ---
 bool success
+string name
 string message
 geometry_msgs/Pose pose
 builtin_interfaces/Time stamp

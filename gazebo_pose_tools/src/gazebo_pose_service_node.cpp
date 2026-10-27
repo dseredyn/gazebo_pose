@@ -89,6 +89,7 @@ private:
     std::lock_guard<std::mutex> lock(mutex_);
 
     auto it = poses_.find(req->name);
+    res->name = req->name;
 
     if (it == poses_.end()) {
       // Helpful fallback for scoped names such as default::yellow_cylinder.
